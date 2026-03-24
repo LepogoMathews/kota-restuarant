@@ -1,0 +1,6 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="400" fill="#F3722C"/>
+    <circle cx="400" cy="200" r="150" fill="#E63946"/>
+    <text x="300" y="210" font-family="Inter" font-size="40" fill="#FFF">Kota Culture</text>
+    <path d="M100 300 Q200 200 300 300 T500 300 T700 300" stroke="#FFF" stroke-width="10" fill="none"/>
+</svg>

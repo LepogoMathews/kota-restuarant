@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Place your order online at Negus Kota Takeaway for kotas, burgers, and more. Pickup or delivery available in Johannesburg.">
+    <meta property="og:title" content="Negus Kota Takeaway - Order Online">
+    <meta property="og:description" content="Quick and easy ordering for fresh kotas, burgers, sides & drinks. We'll confirm via WhatsApp.">
+    <meta property="og:image" content="assets/images/hero-restaurant.svg">
+    <meta property="og:url" content="https://www.neguskota.com/order.html">
+    <title>Negus Kota Takeaway - Order Online</title>
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Negus Kota Takeaway",
+      "image": "assets/images/logo.svg",
+      "telephone": "+27-11-123-4567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Street",
+        "addressLocality": "Johannesburg",
+        "postalCode": "2000",
+        "addressCountry": "ZA"
+      },
+      "potentialAction": {
+        "@type": "OrderAction",
+        "deliveryMethod": ["http://schema.org/OnSitePickup", "http://schema.org/DeliveryMode"],
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "order.html",
+          "inLanguage": "en",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__logo">
+                <img src="assets/images/logo.svg" alt="Negus Kota Takeaway Logo">
+            </a>
+            <ul class="navbar__links">
+                <li><a href="index.html" class="navbar__link">Home</a></li>
+                <li><a href="menu.html" class="navbar__link">Menu</a></li>
+                <li><a href="gallery.html" class="navbar__link">Gallery</a></li>
+                <li><a href="order.html" class="navbar__link active">Order</a></li>
+                <li><a href="contact.html" class="navbar__link">Contact</a></li>
+            </ul>
+            <div class="navbar__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="order-page">
+        <div class="container">
+            <div class="order-hero">
+                <h1 class="section__title">Order Your Favourite Kotas & More</h1>
+                <p class="order-subtitle">Fill in your details below — we'll send your order straight to WhatsApp for quick confirmation and payment on pickup/delivery. Fast, fresh, and flavourful!</p>
+                <a href="menu.html" class="btn btn--secondary">View Full Menu First</a>
+            </div>
+
+            <form class="order__form glass-card" id="orderForm">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" placeholder="e.g. Thabo Mokoena" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Number *</label>
+                    <input type="tel" id="contact" placeholder="e.g. 082 123 4567" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="orderDetails">Order Details *</label>
+                    <textarea id="orderDetails" rows="5" placeholder="Example:&#10;2 x Quarter Kota (extra cheese & atchar)&#10;1 x Beef Burger (no onion)&#10;3 x Chips&#10;2 x Coke" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="orderType">Pickup or Delivery? *</label>
+                    <select id="orderType" required>
+                        <option value="">Select option</option>
+                        <option value="pickup">Pickup (at our spot in Joburg)</option>
+                        <option value="delivery">Delivery (within Johannesburg area)</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="deliveryAddressGroup" style="display: none;">
+                    <label for="deliveryAddress">Delivery Address *</label>
+                    <textarea id="deliveryAddress" rows="3" placeholder="Full street address, suburb, Johannesburg (e.g. 45 Vilakazi St, Soweto)"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialInstructions">Special Instructions or Notes (optional)</label>
+                    <textarea id="specialInstructions" rows="3" placeholder="e.g. Please cut the kota in half, allergy note: no peanuts, call on arrival, etc."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--large">Send Order via WhatsApp</button>
+            </form>
+
+            <div class="order-info glass-card">
+                <h3>Quick Info</h3>
+                <ul>
+                    <li>Orders confirmed & paid via WhatsApp (cash/EFT on delivery or pickup)</li>
+                    <li>Pickup ready in ~15 mins | Delivery times vary (Joburg area only)</li>
+                    <li>Questions? <a href="https://wa.me/27111234567">Chat with us directly</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="footer__contact">
+                <p>Email: info@neguskota.com</p>
+                <p>WhatsApp: +27-11-123-4567</p>
+            </div>
+            <div class="footer__social">
+                <a href="#"><img src="assets/images/social-facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="assets/images/social-twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="assets/images/social-instagram.svg" alt="Instagram"></a>
+            </div>
+            <p class="footer__copyright">© 2026 Negus Kota Takeaway. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
